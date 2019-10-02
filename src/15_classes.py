@@ -23,8 +23,8 @@ class Waypoint(LatLon):
     def __repr__(self):
         return '{name:' + self.name+', lat:' + str(self.lat)+', lon:' + str(self.lon)+'}'
 
-    def __str__(self):
-        return '{name:' + self.name+', lat:' + str(self.lat)+', lon:' + str(self.lon)+'}'
+    # def __str__(self):
+    #     return '{name:' + self.name+', lat:' + str(self.lat)+', lon:' + str(self.lon)+'}'
 
         # Make a class Geocache that can be passed parameters `name`, `difficulty`,
         # `size`, `lat`, and `lon` to the constructor. What should it inherit from?
@@ -41,13 +41,13 @@ class Geocache(Waypoint):
     def __repr__(self):
         return '{name:' + self.name + ', lat:' + str(self.lat) + ', lon:' + str(self.lon) + ',size:' + str(self.size) + ', difficulty:' + str(self.difficulty)+'}'
 
-    def __str__(self):
-        return '{name:' + self.name + ', lat:' + str(self.lat) + ', lon:' + str(self.lon) + ',size:' + str(self.size) + ', difficulty:' + str(self.difficulty)+'}'
+    # def __str__(self):
+    #     return '{name:' + self.name + ', lat:' + str(self.lat) + ', lon:' + str(self.lon) + ',size:' + str(self.size) + ', difficulty:' + str(self.difficulty)+'}'
 
         # Make a new waypoint and print it out: "Catacombs", 41.70505, -121.51521
 
         # YOUR CODE HERE
-        waypoint = Waypoint("Catacombs", 41.70505, -121.51521)
+waypoint = Waypoint("Catacombs", 41.70505, -121.51521)
 
         # Without changing the following line, how can you make it print into something
         # more human-readable? Hint: Look up the `object.__str__` method
