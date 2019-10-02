@@ -22,3 +22,20 @@ and does the following:
 import sys
 import calendar
 from datetime import datetime
+
+
+def telldate():
+    try:
+        if len(sys.argv) == 1:
+            print(calendar.month(datetime.now().year, datetime.now().month))
+
+        if len(sys.argv) == 2:
+            print(calendar.month(datetime.now().year, int(sys.argv[1])))
+
+        if len(sys.argv) == 3:
+            print(calendar.month(int(sys.argv[2]), int(sys.argv[1])))
+    except ValueError:
+        print("{!r} is not a numeric value".format(sys.argv))
+
+
+telldate()
